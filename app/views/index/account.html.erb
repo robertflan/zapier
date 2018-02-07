@@ -1,0 +1,172 @@
+<section id="account">
+	<div class="container">
+		<div class="account-header row">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<h1> Welcome, crex0207-2</h1>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<button class="btn pull-xs-right membership-btn">Go to zapier</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+				<ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left" role="navigation">
+					<li class="nav-item">
+						<a href="#api" class="nav-link" data-toggle="tab" role="tab" aria-controls="api">API KEY</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#profile" class="nav-link" data-toggle="tab" role="tab" aria-controls="profile">Profile</a>
+					</li>
+					<li class="nav-item">
+						<a href="#account-membership" class="nav-link" data-toggle="tab" role="tab" aria-controls="account-membership">My Memberships</a>
+					</li>
+					<li class="nav-item">
+						<a href="#past" class="nav-link" data-toggle="tab" role="tab" aria-controls="past">Past Invoices</a>
+					</li>
+					<li class="nav-item">
+						<a href="#payment" class="nav-link" data-toggle="tab" role="tab" aria-controls="payment">Payment & Financials</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+				<div class="tab-content">
+					<div class="tab-pane fadein show active text-center" id="api" role="tabpanel">
+						<div class="card">
+						  <div class="card-header">
+						   <h1>API KEY</h1>
+						  </div>
+						  <div class="card-block">
+						  	<div class="row">
+						  		<p>API Key for you to use in Zapier</p><br>
+								<%= image_tag 'api.png', class: '', alt: '' %><br>
+								<p class="key">NVUQ9NRJEHZJ9UJSMQXOEDC</p>
+						  	</div>
+						  </div>
+						 </div>
+					</div>
+
+					<div class="tab-pane fade" id="profile" role="tabpanel">
+						<div class="card">
+						  <div class="card-header">
+						    <h1>Profile</h1>
+						  </div>
+						  <div class="card-block">
+						  	<form>
+							  <div class="form-group">
+							    <label for="exampleInputName">Name</label>
+							    <input type="text" class="form-control" id="exampleInputName" aria-describedby="name" >
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputEmail1">Email address</label>
+							    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+							    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputPassword1">Password</label>
+							    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+							  </div>
+							  <div class="form-group">
+							    <label for="confirmPassword1">Confirm Password</label>
+							    <input type="password" class="form-control" id="confirmPassword1" placeholder="Confirm Password">
+							  </div>
+							  <div class="form-check">
+							    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+							    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+							  </div>
+						  	<button type="submit" class="btn membership-btn btn-block">Save</button>
+							</form>
+						  </div>
+						</div>
+						
+					</div>
+					<div class="tab-pane fade" id="account-membership" role="tabpanel">
+						<div class="card text-center">
+						  <div class="card-header">
+						   <h1> My Memberships</h1>
+						  </div>
+						  <div class="card-block current-block">
+						  	<div class="row">
+						  		<h4>Current Plans</h4>
+						  		<p>Monthly
+								$6 per month</p>
+								<button class="btn membership-btn" type="button">Renew</button>
+								<button class="btn membership-btn">Update Billing Info </button>
+								<button class="btn membership-btn">Change</button>
+								<button class="btn membership-btn">Cancel</button>
+								<button class="btn membership-btn">View all Membership Options</button>
+						  	</div>
+						  </div>
+						  <div class="card-block">
+						    	<h4>Billing Information</h4>
+								<p>$0.00 now and then $6.00 per Month. after your 14 day trial.</p>
+						    	<button class="btn membership-btn">View Transaction History </button>
+						    	<button class="btn membership-btn">Manage Payment Methods</button>
+						  </div>
+						  <div class="card-block">
+						    	<h4>Expiration</h4>
+						    	<p>	February 25, 2018</p>
+						  </div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="past" role="tabpanel">
+						<div class="card text-center">
+						  <div class="card-header">
+						    <h1>Past Invoices</h1>
+						  </div>
+						  <div class="card-block">
+						    <h4 class="card-title">Date</h4>
+						    <p class="card-text">Date	Level	Amount January 28, 2018</p>
+						
+						  </div>
+						  <div class="card-block">
+						    <h4 class="card-title">Level</h4>
+						    <p class="card-text">Monthly</p>
+						  </div>
+						  <div class="card-block">
+						    <h4 class="card-title">Amount</h4>
+						    <p class="card-text">$0.00</p>
+						  </div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="payment" role="tabpanel">
+						<div class="card text-center">
+						  <div class="card-header">
+						    <h1>Payment & Financials</h1>
+						  </div>
+						  <div class="card-block">
+						    <h4 class="card-title">Payment Methods</h4>
+						    <button class="btn membership-btn">+ Payment Method </button>
+						
+						  </div>
+						  <div class="card-block">
+						    <h4 class="card-title">Finance Settings</h4>
+						    <div class="form-group currency">
+						    	<label for="currency">My Currency</label>
+							    <select class="form-control" id="currency">
+								  <option>USD</option>
+								  <option>CAD</option>
+								  <option>AUD</option>
+								  <option>EUR</option>
+								</select>
+							</div>
+						    <div class="row">
+								  <div class="col-sm-4">
+								    <input type="text" class="form-control" placeholder="Tax-type">
+								  </div>
+								  <div class="col-sm-4">
+								    <input type="text" class="form-control" placeholder="Rate">
+								  </div>
+								  <div class="col-sm-4">
+								    <input type="text" class="form-control" placeholder="Tax Id">
+								  </div>
+							</div>
+						  <button type="submit" class="btn membership-btn btn-block">Save settings</button>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

@@ -24,7 +24,6 @@ $( document ).on('turbolinks:load',function() {
 	    $('#navbarSide').removeClass('reveal');
 	    $('.overlay').hide();
 	  });
-
 	$('.flexslider').flexslider({
         animation: "slide",
         controlNav: "thumbnails",
@@ -90,7 +89,4 @@ $( document ).on('turbolinks:load',function() {
 	$('.flex-control-thumbs img').on('mouseout', function(){
     	$('.flex-control-thumbs li span.thumb-over').remove();
     });	
- new WOW().init();
- AOS.init();
-	
-});
+ });

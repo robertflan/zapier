@@ -173,10 +173,7 @@ URL: https://github.com/superbestdev/printontotheme
 	    }
 	}
 	/* preloader ----*/
-	h1 {
-		    color: #c3011e;
-		    text-align: center;
-	}
+
 	#header, #footer, #product-progress{
 		background-color: #454459;
 	}
@@ -343,7 +340,7 @@ URL: https://github.com/superbestdev/printontotheme
 		z-index: 990;
 	}
 	#header .nav-active{
-		background: #f39c12;
+		background: #c3011e;
 	}
 
 	#footer{
@@ -488,7 +485,7 @@ URL: https://github.com/superbestdev/printontotheme
 		height:auto;
 		float:left;
 		position:absolute;
-		top:20%;
+		top:30%;
 	}
 
 	.flex-inner{
@@ -745,16 +742,16 @@ URL: https://github.com/superbestdev/printontotheme
 		opacity: .9;		
 	}
 	.category-mark.vinyl{		
-		border-bottom: 40px solid #3598DB;
+		border-bottom: 40px solid #c3011e;
 	}
 	.category-mark.canvas{		
-		border-bottom: 40px solid #81C6CB;
+		border-bottom: 40px solid #c3011e;
 	}
 	.category-mark.wood{		
-		border-bottom: 40px solid #E77E23;
+		border-bottom: 40px solid #c3011e;
 	}
 	.category-mark.metal{		
-		border-bottom: 40px solid #61666A;
+		border-bottom: 40px solid #c3011e;
 	}
 
 	.testimonial-heading{
@@ -1644,3 +1641,110 @@ URL: https://github.com/superbestdev/printontotheme
 	color: #2c3e50;
 }
 
+h1 {
+	    color: #c3011e;
+	    text-align: center;
+}
+.text-center{
+	text-align: center;
+}
+/* account page*/
+
+$padding-base: 15px;
+$color-body: #fff;
+$color-border: #ddd;
+$color-link: #0275d8;
+$border-radius: .25rem;
+
+.nav-tabs {
+	&--vertical {
+		/*border-right: 1px solid $color-border;*/
+		display: flex;
+		flex-flow: column nowrap;
+	}
+	
+	&--left {
+		margin: 0 $padding-base;
+		
+		.nav-item + .nav-item {
+			margin-top: .25rem;
+		}
+		
+		.nav-link {
+			white-space: nowrap;
+			
+			&:hover {
+				background-color: lighten($color-border, 10%);
+			}
+		}
+		
+		.nav-link.active {
+			/*border-bottom-color: $color-border;
+			border-right-color: $color-body;
+			border-bottom-left-radius: $border-radius;
+			border-top-right-radius: 0;*/
+			margin-right: -1px;
+			
+			/*&:hover {
+				background-color: $color-body;
+				border-color: $color-link $color-body $color-link $color-link;
+			}*/
+		}
+	}
+}
+#account{
+	padding: 50px 0px;
+	min-height: 600px;
+}
+#account .account-header {
+	margin: 20px 0px 40px 0px;
+}
+#account .nav-tabs .active{
+	background: #eceeef;
+	color: #c3011e;
+}
+#account .nav-tabs .active a{
+	color: #c3011e;
+}
+#account .nav-tabs .nav-item a{
+	color: #373a3c;
+}
+#account .nav-tabs .active:hover{
+	border-right: 2px;
+}
+#account .key{
+	padding: 20px 0px;
+}
+.form-check-input {
+    position: absolute;
+    margin-top: .25rem;
+    margin-left: 0;
+}
+#account .card-block {
+    padding: 1.25rem;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+#account .membership-btn{
+    background: linear-gradient(to bottom,#fff 0,#F0F0F0 100%);
+    border: 1px solid #BEC0C2;
+    transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+
+}
+#account .card-block h2{
+	margin-bottom: 20px;
+	margin-top: 10px; 
+}
+#account .currency{
+	text-align: left;
+}
+#account h4{
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+#payment .btn{
+	margin-top: 20px;
+}

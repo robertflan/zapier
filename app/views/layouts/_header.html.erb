@@ -25,44 +25,39 @@
     <![endif]-->
   </head>
   
-  <body>
+  <body data-spy="scroll" data-target=".navbar"  data-offset="250">
     <!-- Header Section -->
-    <div class="spn_hol">
+   <!--  <div class="spn_hol">
       <div class="spinner">
         <div class="bounce1"></div>
         <div class="bounce2"></div>
         <div class="bounce3"></div>
       </div>
-    </div>
-
-    <!-- END PRELOADER -->
+    </div> -->
+        <!-- END PRELOADER -->
 
    <section id="header">
       <div class="container">
         <nav class="navbar">
         <!-- Brand -->
-        <a class="navbar-brand" href="#">
 
-            <%= image_tag 'print-onto-logo.png', class: 'logo-img', alt: '' %><!-- 
-          <img src="assets/img/print-onto-logo.png" class="logo-img"> -->
-        </a>
-
+                <%= link_to image_tag("print-onto-logo.png",class: 'logo-img',  alt: " logo"), root_path, :class => "navbar-brand"%>
         <!-- Links -->
-        <ul class="nav navbar-nav pull-xs-right main-menu desktop-menu">
+        <ul class="nav navbar-nav pull-xs-right  main-menu desktop-menu">
           <li class="nav-item">
-            <a class="nav-link">About</a>
+            <a class="nav-link nav-link-video" href="#video">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" >Features</a>
+            <a class="nav-link" href="#product-progress" >Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Pricing</a>
+            <a class="nav-link" href="#membership">Pricing</a>
           </li>
           <li class="nav-item">
             <a class="nav-link">Blog</a>
           </li>
           <li class="nav-item nav-active">
-            <a class="nav-link">Login</a>
+            <%= link_to 'Login', account_path, class: 'nav-link' %>
           </li>
           <li class="nav-item">
             <a class="nav-link">Signup</a>
@@ -72,7 +67,7 @@
         <ul class="nav navbar-nav pull-xs-right mobile-menu">
           
           <li class="nav-item">
-            <a href="#" class="nav-link" id="navbarSideButton">
+            <a  class="nav-link" id="navbarSideButton">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -86,13 +81,13 @@
            <a href="#" class="side-link top"><</a>
           </li>
           <li class="navbar-side-item">
-            <a href="about.html" class="side-link">about</a>
+            <a href="#" class="side-link">about</a>
           </li>
           <li class="navbar-side-item">
-            <a href="why_choose_us.html" class="side-link">why choose us?</a>
+            <a href="#" class="side-link">why choose us?</a>
           </li>
           <li class="navbar-side-item">
-            <a href="portfolio_product.html" class="side-link" data-toggle="dropdown" data-hover="dropdown">our works</a>
+            <a href="#" class="side-link" data-toggle="dropdown" data-hover="dropdown">our works</a>
             <ul class="collapse dropdown-menu">
             <li><a href="single_product.html">Canvas</a></li>
                         <li><a href="single_product.html">Wood</a></li>
@@ -101,13 +96,13 @@
           </ul>
           </li>
           <li class="navbar-side-item">
-            <a href="blog_portfolio.html" class="side-link">blog</a>
+            <a href="#" class="side-link">blog</a>
           </li>
           <li class="navbar-side-item">
-            <a href="customer_dashboard.html" class="side-link">contact</a>
+            <a href="#" class="side-link">contact</a>
           </li> 
           <li class="navbar-side-item nav-active">
-            <a href="index.php" class="side-link">get started</a>
+            <a href="#" class="side-link">get started</a>
           </li>           
         </ul>
         <div class="overlay"></div>
