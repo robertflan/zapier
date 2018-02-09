@@ -89,4 +89,7 @@ $( document ).on('turbolinks:load',function() {
 	$('.flex-control-thumbs img').on('mouseout', function(){
     	$('.flex-control-thumbs li span.thumb-over').remove();
     });	
- });
+ new WOW().init();
+ AOS.init();
+	
+});
