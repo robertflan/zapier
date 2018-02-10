@@ -417,8 +417,9 @@ URL: https://github.com/superbestdev/printontotheme
 		text-transform: uppercase;
 		display: inline-block;
 		text-decoration: none;
-		background: #1abc9c;
-		color: #fff;
+		border: 2px solid #c3011e;
+		/*background: #1abc9c;*/
+		color: #c3011e;
 		font-size: 18px;
 		font-weight: 600;
 		transition: all linear 0.5s;
@@ -430,7 +431,7 @@ URL: https://github.com/superbestdev/printontotheme
 	.green-btn:hover{
 		color: #fff;
 		text-decoration: none;
-		background: #F39C11;
+		background: #c3011e;
 	}
 	.green-btn:focus{
 		text-decoration: none;
@@ -560,10 +561,12 @@ URL: https://github.com/superbestdev/printontotheme
 		text-transform:uppercase;
 		display:inline-block;
 		text-decoration:none;
-		background:#1abc9c;
-		color:#fff;
+		/*background:#1abc9c;*/
+		border: 2px solid #c3011e;
+		color:#c3011e;
 		font-size:26px;
 		font-weight:600;
+		border-radius: 5px;
 		transition: all linear 0.5s;
 		-moz-transition: all linear 0.5s;
 		-ms-transition: all linear 0.5s;
@@ -572,7 +575,8 @@ URL: https://github.com/superbestdev/printontotheme
 	}
 
 	.slider-butt a:hover{
-		background: #F39C11;;
+		background: #c3011e;
+		color: #fff;
 	}
 	
 
@@ -1635,7 +1639,7 @@ URL: https://github.com/superbestdev/printontotheme
 	text-align: center;
 }
 .card-block h2{
-	color: #1abc9c;
+	color: #c3011e;
 }
 .fusion-text p{
 	color: #2c3e50;

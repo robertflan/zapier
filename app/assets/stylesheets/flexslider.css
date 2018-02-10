@@ -257,13 +257,13 @@ html[xmlns] .flexslider .slides {
 }
 .flex-control-thumbs .flex-active {
   opacity: 1;
-  border-color: #1ABB9C !important;
+  border-color: #c3011e !important;
   cursor: default;
 }
 
 .flex-control-thumbs img:hover{
   opacity: 1;
-  border-color: #1ABB9C !important;
+  border-color: #c3011e !important;
   cursor: pointer;
 }
 
